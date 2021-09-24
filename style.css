@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
 BARVY:
@@ -14,3 +20,71 @@ tlačítko Facebook:				 #3b5998
 tlačítko Facebook aktivní: #2b406e
 */
 
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #b2bec3;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #d63031;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.box {
+  background-color: white;
+  width: 550px;
+  margin: 150px auto;
+  padding: 30px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.photo {
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  width: 150px;
+  border: 3px solid white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.box a {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.link--lightblue {
+  background-color: #1da1f2;
+  margin-bottom: 5px;
+}
+
+.link--lightblue:focus,
+.link--lightblue:active {
+  background-color: #0b7bc1;
+}
+
+.link--darkblue {
+  background-color: #3b5998;
+}
+
+.link--darkblue:focus,
+.link--darkblue:active {
+  background-color: #2b406e;
+}
